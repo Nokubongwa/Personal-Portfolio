@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+        <title>Nokubongwa Buhle Ndlela Portfolio Website</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="https://kit.fontawesome.com/a49c17addf.js" crossorigin="anonymous"></script>
+
+        <!-- script to send emails to gmail inbox from contact form-->
+
+    </head>
+    <body>
+<!-----------------------------------------HEADER (MAIN PAGE) SECTION--------------------------------------->        
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <h3>NOKUBONGWA <span>NDLELA</span></h3>
+                    <ul id="sidemenu">
+                        
+                        <li><a href="#header"> <i class="fa-solid fa-house-user"> </i> Home</a></li>
+                        
+                        <li><a href="#about"> <i class="fa-regular fa-address-card"> </i> About</a></li>
+                        
+                        <li><a href="#services"> <i class="fa-brands fa-servicestack"> </i> Services</a></li>
+                        
+                        <li><a href="#projects"> <i class="fa-solid fa-diagram-project"> </i> Projects</a></li>
+                        
+                        <li><a href="#contact"> <i class="fa-regular fa-address-book"> </i> Contact</a></li>
+                        <i class="fa-solid fa-x" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <h1>Hello, I'm <br> <span>Nokubongwa</span></h1>
+                    <p>I'm a Data <span id="dynamic-role" class="fade-role">Analyst</span></p>
+                </div>
+                
+            </div>
+            
+        </div>
+<!--- ======================================ABOUT ME SECTION====================================--->
+
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="images/buhle_image.jpg" width=20%>
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="subtitle">About Me</h1>
+                        <p>I'm a Data Analyst and aspiring Data Scientist with a strong foundation in transforming raw data into actionable insights that drive strategic decisions. With experience across internal audit, HR analytics, and sales forecasting, I combine analytical rigor with technical proficiency to solve real-world business problems.
+
+I specialize in building interactive dashboards (Power BI, Excel), developing predictive models (Python, scikit-learn), and automating data workflows using APIs and Azure DevOps. Whether it's identifying risk trends in audit data, uncovering key drivers of employee turnover, or forecasting sales performance, I bring a results-driven mindset and a passion for impactful, data-informed solutions.
+
+My skillset bridges the gap between business intelligence and advanced analytics, enabling organizations to not just understand their data—but to act on it confidently.</p>
+
+
+                        <div class="tab-title">
+
+                            <p class="tab-links active-link" onclick="opentab('skills')"><i class="fa-solid fa-lightbulb"></i> Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')"><i class="fa-solid fa-hourglass-half"></i> Experience</p>
+                            <p class="tab-links" onclick="opentab('education')"><i class="fa-solid fa-graduation-cap"></i> Education</p>
+                            <p class="tab-links" onclick="opentab('certifications')"><i class="fa-solid fa-certificate"></i> Certifications</p>
+                        </div>
+
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Programming Languages</span><br>Python<br>HTML<br>JavaScript</li>
+                                <li><span>Data Management</span><br>SQL<br>Advanced Ms Excel</li>
+                                <li><span>Data Visualization/ Reporting</span><br>PowerBI desktop & PowerBI Report Builder<br>Seaborn<br>Matplotlib</li>
+                                <li><span>Machine Learning(Supervised and Unsupervised Learning)</span><br>Predictive Models(Advanced Regression, Classification)</li>
+                                <li><span>Statistical Analysis</span><br>Hypothesis Testing<br>Data Cleaning<br>Trend Analysis</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>April 2025 - Current</span><br><strong> Bidvest Advisory Services(ALICE)</strong><br>Data Scientist</li>
+                                <li><span>April 2024 - March 2025</span><br><strong>Bidvest Bank</strong><br>Internal Audit Data Analyst </li>
+                                <li><span>May 2023 - March 2024</span><br><strong>BCX</strong><br>Junior Data Analyst </li>
+                                <li><span>Jan 2022 - Dec 2022</span><br><strong>Telkom</strong><br>Data Science Intern </li>
+                                <li><span>March 2022 - June 2023</span><br><strong>University of Kwa-Zulu Natal</strong><br>Tutor/Demonstrator </li>
+                          
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2022</span><br>University of Kwa-Zulu Natal<br>Bachelor of Science Honour in Statistics </li>
+                                <li><span>2022</span><br>Explore AI Academy<br>Data Science </li>
+                                <li><span>2021</span><br>University of Kwa-Zulu Natal<br>Bachelor of Science in Applied Mathematics & Statistics </li>
+                             
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="certifications">
+                            <ul>
+                                <li><span>2025</span><br>Udemy<br>The Complete SQL Masterclass 2025 </li>
+                                <li><span>2024</span><br>Udemy<br>Relational Database Design</li>
+                                <li><span>2024</span><br>Udemy<br>Intro to Financial Analysis and Managerial Accounting</li>
+                                <li><span>2024</span><br>Alison<br>SQL Serve for Data Analysis</li>
+                                <li><span>2024</span><br>Forage<br>PWC Power BI Job Simulation</li>
+                                <li><span>2022</span><br>Explore AI Academy<br>Data Science</li>
+                             
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!-- =====================================Services================================================-->
+        <div id="services">
+            <div class="container">
+                <h1 class="subtitle">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-screwdriver-wrench"></i>
+                        <h2>Data Cleaning,Analysis & Reporting</h2>
+                        <p>Clean, prepare, and analyze structured data using SQL, Python, and Excel. Deliver clear, actionable reports that support audits, operations, and strategy.</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-chart-simple"></i>
+                        <h2>Business Intelligence and Dashboards</h2>
+                        <p>Design interactive dashboards using Power BI and Excel to visualize key metrics across business functions. Enable decision-makers to monitor trends, assess performance, and act on real-time data.</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-robot"></i>
+                        <h2>Predictive Modeling & Forecasting</h2>
+                        <p>I design and deploy machine learning models using Python (scikit-learn, pandas, NumPy) to generate forecasts for business-critical metrics. My models leverage supervised learning techniques such as regression, classification, 
+                            and time-series analysis to improve forecast precision and reduce business uncertainty.
+                            From feature engineering to model evaluation (e.g., RMSE, ROC AUC), I apply best practices to ensure scalable, reliable predictions that integrate directly into dashboards or automated workflows.</p>
+                        <a href="#">Learn More</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-cogs"></i>
+                        <h2>Automation & Data Workflow Optimization</h2>
+                        <p>I develop end-to-end automated workflows using tools like Azure DevOps, REST APIs, and Python streamlining data pipelines, reducing human error, and improving the speed and accuracy of reporting.</p>
+                        <a href="#">Learn More</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+<!-- =====================================Projects================================================-->
+        <div id="projects">
+            <div class="container">
+                <h1 class="subtitle">My Projects</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/data-analysis-skills-duties-responsibilities.png", width="100%">
+                        <div class="layer">
+                            <h3>Customer Churn Analysis</h3>
+                            <p>Identifying customer Attrition</p>
+                            <a href="https://github.com/Nokubongwa/Honours_FNB_Attrition_Analysis"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/data science2.png", width="100%">
+                        <div class="layer">
+                            <h3>FNB App Academy</h3>
+                            <p> Learn HTML, CSS and JavaScript to build website</p>
+                            <a href="https://github.com/Nokubongwa/FNBAppAcademy-week3"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                        
+                    </div>
+                    <div class="work">
+                        <img src="images/visuals.png", width="100%">
+                        <div class="layer">
+                            <h3>Natural Language Processing</h3>
+                            <p>Identify which language the text is in</p>
+                            <a href="https://github.com/Nokubongwa/Language_Identification"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="https://github.com/Nokubongwa" class="btn">See More</a>
+            </div>
+        </div>
+
+<!-- =====================================Contacts================================================-->
+        <div id="contact">
+         <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p><i class="fa-solid fa-square-envelope"></i> buhlebayeni04@gmail.com</p>
+                    <p><i class="fa-solid fa-phone-volume"></i> 073 124 1702</p>
+
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/nokubongwa-ndlela-74084b227/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Nokubongwa"><i class="fa-brands fa-square-github"></i></a>
+                    </div>
+                    <a href="images/NOKUBONGWA BUHLE NDLELA CV.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form action="https://api.web3forms.com/submit" method="POST" id="contact-form" name="submit-to-google-sheet">
+                        <input type="hidden" name="access_key" value="56e45b6a-cd81-4105-ba5c-16811d8d1da8">
+                        <input type="text" id="name" name="Name" placeholder="Your Name" required>
+                        <input type="email" id="email" name="Email" placeholder="Your Email" required>
+                        <input type="text" id="subject" name="Subject" placeholder="Subject" required>
+                        <textarea id="message" name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2" >Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+         </div>  
+        </div>
+<!-- =====================================JavaScript code dynamic role==========================================-->
+        <script>
+            const roles = ["Analyst", "Scientist"];
+            let index = 0;
+            const roleEl = document.getElementById("dynamic-role");
+
+            setInterval(() => {
+            // Fade out
+                roleEl.classList.add("fade-out");
+
+            // Wait for fade-out to complete (800ms), then switch text
+                setTimeout(() => {
+                index = (index + 1) % roles.length;
+                roleEl.textContent = roles[index];
+
+            // Fade back in
+                roleEl.classList.remove("fade-out");
+                }, 500); // match fade duration
+             }, 3500); // 5 sec visible + 0.8s fade + slight buffer
+        </script>
+
+<!-- =====================================JavaScript code main big screen==========================================-->
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab")
+            }
+        </script>
+<!-- =====================================JavaScript code small screen==========================================-->
+        <script>
+
+            var sidemenu=document.getElementById("sidemenu");
+
+            function openmenu(){
+                sidemenu.style.right="0";
+            }
+
+            function closemenu(){
+                sidemenu.style.right="-200px";
+            }
+        </script>
+
+     <!--   <script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzhHIYnA1hSIWr_Udf9FKxhXBjrJw3Ki9cI-GlGHqsdea1GnWBQ3O6PtNZlVZQDvG8/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg=document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML='Message Sent Successfully'
+        setTimeout(function(){
+            msg.innerHTML=''
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script> -->
+    </body>
+</html>
