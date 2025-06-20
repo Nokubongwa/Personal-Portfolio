@@ -128,9 +128,7 @@ My skillset bridges the gap between business intelligence and advanced analytics
                     <div>
                         <i class="fa-solid fa-robot"></i>
                         <h2>Predictive Modeling & Forecasting</h2>
-                        <p>I design and deploy machine learning models using Python (scikit-learn, pandas, NumPy) to generate forecasts for business-critical metrics. My models leverage supervised learning techniques such as regression, classification, 
-                            and time-series analysis to improve forecast precision and reduce business uncertainty.
-                            From feature engineering to model evaluation (e.g., RMSE, ROC AUC), I apply best practices to ensure scalable, reliable predictions that integrate directly into dashboards or automated workflows.</p>
+                        <p>build machine learning models in Python to forecast key business metrics. Using tools like scikit-learn and pandas, I apply regression, classification, and time-series techniques to deliver accurate, scalable predictions.</p>
                         <!--<a href="#">Learn More</a>-->
                     </div>
                     <div>
@@ -262,6 +260,34 @@ My skillset bridges the gap between business intelligence and advanced analytics
                 sidemenu.style.right="-200px";
             }
         </script>
+
+<!-- ==============================code to reset form after successful submission=================================== -->
+<script>
+  document.getElementById("contact-form").addEventListener("submit", function (e) {
+    e.preventDefault(); // Stop default form submission
+
+    const form = e.target;
+    const formData = new FormData(form);
+
+    fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      body: formData
+    })
+    .then(response => {
+      if (response.ok) {
+        alert("Message sent successfully!");
+        form.reset(); // Clears the form fields
+      } else {
+        alert("Failed to send message.");
+      }
+    })
+    .catch(error => {
+      console.error("Error:", error);
+      alert("Something went wrong!");
+    });
+  });
+</script>
+
 
      <!--   <script>
   const scriptURL = 'https://script.google.com/macros/s/AKfycbzhHIYnA1hSIWr_Udf9FKxhXBjrJw3Ki9cI-GlGHqsdea1GnWBQ3O6PtNZlVZQDvG8/exec'
